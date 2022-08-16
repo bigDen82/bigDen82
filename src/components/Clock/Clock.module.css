@@ -1,0 +1,144 @@
+.boxnav{
+    
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.boxtext{
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.navlinc{
+    
+    color: #0849c2; 
+    border-bottom: 1px dashed; 
+    margin: 20px;
+    font-family:'Times New Roman', Times, serif;
+    Font-size: 28px;
+    font-weight: 900;
+  }
+  .navlinc:visited {
+    color: #e90f0f;
+  }
+.navlinc:hover {
+    color: #0818ac; 
+    border-bottom: .07em solid;
+  }
+.navlinc:active {
+    color: #0401b9; 
+    border-bottom: 1px dashed;
+  }
+
+img {
+    width: 350px;
+    height: 350px;
+    content: '';
+    position: absolute;
+    z-index: 0;
+}
+.boxclock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+   
+    
+    
+}
+
+.clockbox{
+    margin: 0 auto;
+    border: 1px groove rgb(255, 255, 255);
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+}
+
+.clockbox::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #3f413f;
+    border-radius: 50%;
+    z-index: 999;
+
+}
+
+.clockbox .hour,
+.clockbox .minutes,
+.clockbox .second{
+    position: absolute;
+    
+
+}
+
+.clockbox .hour, .hourarrow{
+    width: 190px;
+    height: 190px;
+    /* background-color: aqua; */
+    
+}
+
+.clockbox .minutes, .minutesarrow{
+    width: 230px;
+    height: 230px;
+    /* background-color: aquamarine; */
+    
+}
+
+.clockbox .second, .secondsarrow{
+    width: 250px;
+    height: 260px;
+    /* background-color: gold; */
+    
+}
+
+
+.hourarrow, .minutesarrow, .secondsarrow{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    
+}
+
+.hourarrow:before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 90px;
+    background-color: #3f413f;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+    
+}
+
+.minutesarrow:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 110px;
+    background-color: #3f413f;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+
+.secondsarrow:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 160px;
+    background-color: #2d2e2b;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+    
+}
